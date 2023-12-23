@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-const FullCard = (props) => {
+const RestaurantCard = (props) => {
     return (
         <View style={styles.item}>
             <View style={styles.itemLeft}>
@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         marginBottom: 10,
+        flexWrap: 'wrap',
     },
     itemLeft: {
         flexDirection: 'row',
         alignItems: 'center',
-        flexWrap: 'wrap',
     },
     square: {
         width: 56,
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default FullCard;
+export default RestaurantCard;

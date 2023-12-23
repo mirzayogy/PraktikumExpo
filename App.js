@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Restaurants } from './api/Restaurants';
-import FullCard from './components/FullCard';
+import RestaurantCard from './components/RestaurantCard';
 
 export default function App() {
 
@@ -16,9 +16,9 @@ export default function App() {
   }, [])
 
   const renderItem = ({ item }) => {
-    return <FullCard name={item.name} 
+    return <RestaurantCard name={item.name} 
               city={item.city} 
-              pictureId={item.pictureId}></FullCard>
+              pictureId={item.pictureId}></RestaurantCard>
   };
 
   return (
