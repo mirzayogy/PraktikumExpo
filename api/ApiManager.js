@@ -3,7 +3,7 @@ import axios from "axios";
 const ApiManager = axios.create({
     baseURL: 'https://restaurant-api.dicoding.dev',
     responseType: 'json',
-    withCredentials: true,
+    // withCredentials: true,
     delayed: true
 })
 
