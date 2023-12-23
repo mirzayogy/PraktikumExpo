@@ -1,23 +1,27 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const RestaurantCard = (props) => {
     return (
-        <View style={styles.item}>
-            <View style={styles.itemLeft}>
-                <Image
-                    source={{
-                        uri:
-                            "https://restaurant-api.dicoding.dev/images/small/" + props.pictureId,
-                    }}
-                    style={styles.square}
-                />
-                <View>
-                    <Text style={styles.itemName}>{props.name}</Text>
-                    <Text style={styles.itemCity}>{props.city}</Text>
+        <TouchableOpacity onPress={() => {
+            props.navigation.navigate("RestaurantDetail", { id: props.id, name: props.name })
+        }}>
+            <View style={styles.item}>
+                <View style={styles.itemLeft}>
+                    <Image
+                        source={{
+                            uri:
+                                "https://restaurant-api.dicoding.dev/images/small/" + props.pictureId,
+                        }}
+                        style={styles.square}
+                    />
+                    <View>
+                        <Text style={styles.itemName}>{props.name}</Text>
+                        <Text style={styles.itemCity}>{props.city}</Text>
+                    </View>
                 </View>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 
