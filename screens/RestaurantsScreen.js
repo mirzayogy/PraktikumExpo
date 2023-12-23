@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#25292e',
         alignItems: 'center',
-        justifyContent: 'center',
+        // justifyContent: 'center',
     },
     wrapper: {
         paddingTop: 58,

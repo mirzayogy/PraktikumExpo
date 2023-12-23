@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         marginRight: 15,
     },
     itemName: {
-        fontSize: '18'
+        fontSize: 18
     },
     itemCity: {
         marginTop: 8,
