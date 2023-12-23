@@ -15,7 +15,9 @@ const RestaurantScreen = ({ navigation }) => {
     }, [])
 
     const renderItem = ({ item }) => {
-        return <RestaurantCard name={item.name}
+        return <RestaurantCard 
+            id={item.id}
+            name={item.name}
             city={item.city}
             pictureId={item.pictureId}
             navigation={navigation}

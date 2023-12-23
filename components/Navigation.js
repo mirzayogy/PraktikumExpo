@@ -3,7 +3,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import RestaurantScreen from '../screens/RestaurantsScreen';
-import RestaurantDetailScreen from '../screens/RestaurantDetail';
+import RestaurantDetailScreen from '../screens/RestaurantDetailScreen';
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
